@@ -12,14 +12,25 @@
 // Se si sostituirlo con Buzz
 // Controllare se il numero è divisibile sia per 3 che per 5
 // Se si sostituirlo con FizzBuzz
+
+var liValue = [];
+
 for (var i = 1; i <= 100; i++) {
     if ((i % 3 == 0) && (i % 5 == 0)) {
         console.log('FizzBuzz');
+        liValue.push('FizzBuzz');
     } else if (i % 3 == 0) {
         console.log('Fizz');
+        liValue.push('Fizz');
     } else if (i % 5 == 0) {
-        console.log('Buzz')
+        console.log('Buzz');
+        liValue.push('Buzz');
     } else {
         console.log(i);
+        liValue.push(i);
     }
+}
+
+for (var x = 0; x < liValue.length; x ++) {
+    document.getElementById('li-value').innerHTML += " <div>" + liValue[x] + " </div>";
 }

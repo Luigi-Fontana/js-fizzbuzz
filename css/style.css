@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.flex {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#li-value {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 500px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+#li-value div {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
