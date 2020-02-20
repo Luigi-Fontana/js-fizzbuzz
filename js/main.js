@@ -12,3 +12,19 @@
 // Se si sostituirlo con Buzz
 // Controllare se il numero è divisibile sia per 3 che per 5
 // Se si sostituirlo con FizzBuzz
+var resto3;
+var resto5;
+
+for (var i = 1; i <= 100; i++) {
+    resto3 = i % 3;
+    resto5 = i % 5;
+    if ((resto3 == 0) && (resto5 != 0)){
+        console.log('Fizz');
+    } else if ((resto3 != 0) && (resto5 == 0)) {
+        console.log('Buzz');
+    } else if ((resto3 == 0) && (resto5 == 0)) {
+        console.log('FizzBuzz')
+    } else {
+        console.log(i);
+    }
+}
